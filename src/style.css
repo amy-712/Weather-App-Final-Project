@@ -1,0 +1,59 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 48px;
+  line-height: 60px;
+  display: inline;
+  font-weight: 400;
+}
+h2 {
+  font-size: 22px;
+  line-height: 26px;
+  display: inline;
+  text-align: left;
+}
+li {
+  list-style: none;
+}
+.temperatureUnit {
+  font-size: 16px;
+  font-weight: 24px;
+  display: inline-block;
+  text-align: left;
+  line-height: 24px;
+  position: relative;
+  bottom: 24px;
+}
+.todayEmoji {
+  display: inline-block;
+  height: 60px;
+  margin-top: unset;
+  vertical-align: top;
+  width: 60px;
+}
+.weather-app {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#weather-type {
+  display: inline-block;
+  text-align: left;
+  color: #70757a;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 0px;
+  position: relative;
+  top: 6px;
+}
+#location {
+  color: grey;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: right;
+}
