@@ -27,22 +27,31 @@
       <div class="weather-app">
         <form>
           <div class="row">
-            <div class="col-6">
+            <div class="col-4">
               <div class="mb-3">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="🕵🏼‍♀️Search for City"
+                  id="city-search"
+                  placeholder="🕵🏼‍♀️ Search for City"
                 />
-                <div id="emailHelp" class="form-text"></div>
               </div>
             </div>
-            <div class="col-2">
-              <button type="submit" class="btn btn-primary">Search</button>
+            <div class="col-4">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="city-search-button"
+              >
+                Search
+              </button>
             </div>
             <div class="col-4">
-              <button type="button" class="btn btn-success">
+              <button
+                type="button"
+                class="btn btn-success"
+                id="my-location-button"
+              >
                 Use My Location
               </button>
             </div>
@@ -57,9 +66,12 @@
               alt=""
             />
             <h1>8</h1>
-            <span class="temperatureUnit"> ℃ | ℉</span>
+            <span class="temperatureUnit"
+              ><a href="" class="temperatureCelsius"> ℃ </a> |
+              <a href="" class="temperatureFahrenheit"> ℉ </a></span
+            >
           </div>
-          <div class="col-2">
+          <div class="col-3">
             <ul id="weather-type">
               <li>Precipitation: 100%</li>
               <li>Humidity: 74%</li>
@@ -68,7 +80,7 @@
           </div>
           <div class="col-6">
             <ul id="location">
-              <h2>Central Road, Morden UK</h2>
+              <h2>London, UK</h2>
               <li>Thursday 17:00</li>
               <li>Mostly Cloudy</li>
             </ul>
