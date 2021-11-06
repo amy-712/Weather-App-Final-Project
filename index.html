@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,11 +21,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-app">
-        <form>
+        <form id="city-search-form">
           <div class="row">
             <div class="col-4">
               <div class="mb-3">
@@ -59,7 +60,7 @@
         </form>
 
         <div class="row gx-0">
-          <div class="col-3">
+          <div class="col-4">
             <img
               class="todayEmoji"
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
@@ -67,22 +68,21 @@
             />
             <h1>8</h1>
             <span class="temperatureUnit"
-              ><a href="" class="temperatureCelsius"> ℃ </a> |
-              <a href="" class="temperatureFahrenheit"> ℉ </a></span
+              ><a href="#" class="temperatureCelsius"> ℃ </a> |
+              <a href="#" class="temperatureFahrenheit"> ℉ </a></span
             >
           </div>
           <div class="col-3">
             <ul id="weather-type">
-              <li>Precipitation: 100%</li>
-              <li>Humidity: 74%</li>
-              <li>Wind: 7mph</li>
+              <li id="humidity">Humidity: 74%</li>
+              <li id="wind">Wind: 7mph</li>
             </ul>
           </div>
-          <div class="col-6">
+          <div class="col-5">
             <ul id="location">
               <h2>London, UK</h2>
               <li>Thursday 17:00</li>
-              <li>Mostly Cloudy</li>
+              <li id="weather-description">Mostly Cloudy</li>
             </ul>
           </div>
         </div>
