@@ -25,64 +25,75 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form id="city-search-form">
-          <div class="row">
-            <div class="col-4">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="city-search"
-                  placeholder="🕵🏼‍♀️ Search for City"
-                  autocomplete="off"
-                />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="city-search-form">
+            <div class="row">
+              <div class="col-4">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city-search"
+                    placeholder="🕵🏼‍♀️ Search for City"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="city-search-button"
+                >
+                  Search
+                </button>
+              </div>
+              <div class="col-4">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="my-location-button"
+                >
+                  Use My Location
+                </button>
               </div>
             </div>
-            <div class="col-4">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                id="city-search-button"
-              >
-                Search
-              </button>
-            </div>
-            <div class="col-4">
-              <button
-                type="button"
-                class="btn btn-success"
-                id="my-location-button"
-              >
-                Use My Location
-              </button>
-            </div>
-          </div>
-        </form>
+          </form>
 
-        <div class="row gx-0">
-          <div class="col-4">
-            <img id="today-emoji" src="#" alt="" />
-            <h1 id="temperature">8</h1>
-            <span class="temperatureUnit"
-              ><a href="#" id="temperature-celsius" class="active"> ℃ </a> |
-              <a href="#" id="temperature-fahrenheit"> ℉ </a></span
-            >
-          </div>
-          <div class="col-3">
-            <ul id="weather-type">
-              <li id="humidity">Humidity: 74%</li>
-              <li id="wind">Wind: 7mph</li>
-            </ul>
-          </div>
-          <div class="col-5">
-            <ul id="location">
-              <h2 id="place">London, UK</h2>
-              <li id="date">Thursday 17:00</li>
-              <li id="weather-description">Mostly Cloudy</li>
-            </ul>
+          <div class="row gx-0">
+            <div class="col-4">
+              <img id="today-emoji" src="#" alt="" />
+              <h1 id="temperature">8</h1>
+              <span class="temperatureUnit"
+                ><a href="#" id="temperature-celsius" class="active"> ℃ </a> |
+                <a href="#" id="temperature-fahrenheit"> ℉ </a></span
+              >
+            </div>
+            <div class="col-3">
+              <ul id="weather-type">
+                <li id="humidity">Humidity: 74%</li>
+                <li id="wind">Wind: 7mph</li>
+              </ul>
+            </div>
+            <div class="col-5">
+              <ul id="location">
+                <h2 id="place">London, UK</h2>
+                <li id="date">Thursday 17:00</li>
+                <li id="weather-description">Mostly Cloudy</li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <small
+          ><a
+            href="https://github.com/amy-712/Weather-App-Final-Project"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Amy W</small
+        >
       </div>
     </div>
   </body>

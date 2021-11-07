@@ -21,6 +21,16 @@ li {
 a {
   text-decoration: none;
 }
+.weather-app-wrapper {
+  max-width: 650px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: 70757a;
+}
 .temperatureUnit {
   font-size: 16px;
   font-weight: 24px;
@@ -42,14 +52,6 @@ a {
   margin-top: unset;
   vertical-align: top;
   width: 60px;
-}
-.weather-app {
-  max-width: 650px;
-  margin: 30px auto;
-  padding: 10px;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: 70757a;
 }
 
 #my-location-button {
