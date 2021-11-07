@@ -18,14 +18,23 @@ li {
   list-style: none;
   text-transform: capitalize;
 }
+a {
+  text-decoration: none;
+}
 .temperatureUnit {
   font-size: 16px;
   font-weight: 24px;
+  text-decoration: none;
   display: inline-block;
   text-align: left;
   line-height: 24px;
   position: relative;
   bottom: 24px;
+}
+.temperatureUnit .active {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
 }
 .todayEmoji {
   display: inline-block;
@@ -42,14 +51,7 @@ li {
   border-radius: 10px;
   border-color: 70757a;
 }
-.temperatureCelsius {
-  text-decoration: none;
-  color: black;
-}
-.temperatureFahrenheit {
-  text-decoration: none;
-  color: #000;
-}
+
 #my-location-button {
   margin-left: 44px;
 }
@@ -62,7 +64,7 @@ li {
   line-height: 16px;
   padding-left: 0px;
   position: relative;
-  top: 6px;
+  top: 35px;
 }
 #location {
   color: grey;
