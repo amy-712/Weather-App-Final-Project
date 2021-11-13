@@ -56,6 +56,9 @@ a {
 .fiveDayForecast {
   text-align: center;
 }
+.weather-forecast-temperature-min {
+  color: #70757a;
+}
 
 #my-location-button {
   margin-left: 44px;
