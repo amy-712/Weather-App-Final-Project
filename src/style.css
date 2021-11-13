@@ -41,11 +41,7 @@ a {
   position: relative;
   bottom: 24px;
 }
-.temperatureUnit .active {
-  color: #000;
-  cursor: default;
-  text-decoration: none;
-}
+
 .todayEmoji {
   display: inline-block;
   height: 60px;

@@ -110,36 +110,14 @@ function currentLocation(position) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-function fahrenheitConvert(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function celsiusConvert(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  fahrenheit.classList.remove("active");
-  celsius.classList.add("active");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
 let myLocationData = () => {
   navigator.geolocation.getCurrentPosition(currentLocation);
 };
-let celsiusTemperature = null;
+
 let locationButton = document.querySelector("#my-location-button");
 locationButton.addEventListener("click", myLocationData);
 
 let form = document.querySelector("#city-search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheit = document.querySelector("#temperature-fahrenheit");
-fahrenheit.addEventListener("click", fahrenheitConvert);
-
-let celsius = document.querySelector("#temperature-celsius");
-celsius.addEventListener("click", celsiusConvert);
 
 search("London");
