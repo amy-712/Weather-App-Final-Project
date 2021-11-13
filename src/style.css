@@ -53,6 +53,9 @@ a {
   vertical-align: top;
   width: 60px;
 }
+.fiveDayForecast {
+  text-align: center;
+}
 
 #my-location-button {
   margin-left: 44px;
